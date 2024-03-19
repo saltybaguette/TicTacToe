@@ -6,7 +6,7 @@ public class App {
 
         view.Start();
         while(true) {
-            view.showBoard(g);
+            view.showBoard(g.board);
             int[] move = view.getTurn();
             g.setMove(move[1], move[0]);
             g.switchTurn();

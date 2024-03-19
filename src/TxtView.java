@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class TxtView {
+public class TxtView extends View{
     
 
     public TxtView() {
@@ -13,13 +13,8 @@ public class TxtView {
     }
 
 
-    public void showBoard(Game game) {
-        for(int i = 0; i < 3; i++) {
-            for(int j = 0; j < 3; j++) {
-                System.out.print(" " + game.board[i][j] + " ");
-            }
-            System.out.print("\n");
-        }
+    public void showBoard(Board board) {
+        System.out.println(board.toString());
     }
 
     public int[] getTurn() {
